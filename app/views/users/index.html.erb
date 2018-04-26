@@ -11,25 +11,27 @@
     <br>
     <br>
     <br>
-        <div class="register" style="border: 1px solid black; display: inline-block; padding:10px;">
+        <div class="form">
             <h2>Register</h2>
-            <form action="/users/create" method="POST">
+            <br>
+            <form class="login-form" action="/users/create" method="POST">
             <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token%>">
-               <p class="label" style="display: inline-block;"> First Name: <input type="text" name="user[first_name]"><p>
-               <p class="label" style="display: block;">Last Name:<input type="text" name="user[last_name]"></p>
-               <p class="label" style="display: block;">Email: <input type="text" name="user[email]"></p>
-               <p class="label" style="display: block;">Phone Number: <input type="text" name="user[phone]"></p>
-              <p class="label" style="display: block;">Password:<input type="password" name="user[password]"></p>
-                <input type="submit" value="Register">
+               <input type="text" placeholder="First Name" name="user[first_name]">
+              <input type="text" placeholder="Last Name" name="user[last_name]">
+               <input type="text" placeholder="Email" name="user[email]">
+              <input type="text" placeholder ="Phone Number" name="user[phone]">
+              <input type="password" placeholder="Password" name="user[password]">
+                <input class="button" type="submit" value="Register">
             </form>
         </div>
-        <div class="login" style="border: 1px solid black; display: inline-block; vertical-align:top; margin-left:25px; padding:10px;">
+        <div class="form">
             <h2>Login</h2>
-            <form action="/users/login" method="POST">
+            <br>
+            <form class="login-form" action="/users/login" method="POST">
             <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token%>">
-            <p class="label" style="display: block;">Email: <input type="text" name="email"></p>
-            <p class="label" style="display: block;">Password: <input type="password" name="password"></p>
-            <input type="submit" value="Login"> 
+            <input type="text" placeholder="email" name="email"/>
+            <input type="password" placeholder="password" name="password"/>
+            <input class="button" type="submit" value ="Login">
             </form>
         </div>
     </div>
