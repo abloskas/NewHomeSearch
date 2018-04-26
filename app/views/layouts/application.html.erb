@@ -8,6 +8,14 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div class="errors">
+<% if flash[:errors] %>
+  <% flash[:errors].each do |x| %>
+    <%= x %>
+  <% end %>
+<% end %>
+</div>
+
 
 <div class="header">
 <div class="left-header">
@@ -16,7 +24,7 @@
     <ul>
         <li><a href="/homes/show">Dallas Communities</a></li>
         <li><a href="">Map Search</a></li>
-        <% if is_logged_in %>
+        <% if current_user %>
         <li><a href="/users/<%=current_user.id%>">My Profile</a></li>
         <li><a href="/logout">Logout</a></li>
         <%else%>
