@@ -7,6 +7,23 @@
     <title>TheStrete | Communities</title>
 </head>
 <body>
-    
+    <div class="wrapper">
+        <div class="show-info">
+            
+        </div>
+        <div class="display">
+            <h3>Displaying <%=@home.count%> communities</h3>
+        </div>
+        <div class="dallas-homes">
+            <%@home.each do |h|%>
+            <div class="home-div">
+                <h3><%=h.community%></h3>
+                <%= image_tag("coming_soon.png") %>
+                <p><%=h.price%></p>
+                <p><%=h.location%></p>
+            </div>
+            <%end%>
+        </div>
+    </div>
 </body>
 </html>

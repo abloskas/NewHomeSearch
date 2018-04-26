@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ScraperProject</title>
+  <title>TheStrete</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag "style.css" %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+<div class="header">
+<div class="left-header">
+    <h1><a href="/homes">TheStrete</a></h1>
+<div class="right-header">
+    <ul>
+        <li><a href="/homes/show">Dallas Communities</a></li>
+        <li><a href="">Map Search</a></li>
+        <% if is_logged_in %>
+        <li><a href="/users/<%=current_user.id%>">My Profile</a></li>
+        <li><a href="/logout">Logout</a></li>
+        <%else%>
+            <li><a href="/users">Login</a></li>
+            <%end%>
+    </ul>
+</div>
+</div>
+</div>
+
 
 <%= yield %>
 

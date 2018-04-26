@@ -13,6 +13,7 @@
     
 }
 .header{
+    font-family: Gotham,gotham,Verdana,sans-serif;
     height: 75px;
 }
 .left-header h1{
@@ -20,6 +21,10 @@
     display:inline-block;
     position: absolute;
     margin: 2px 0px 0px 30px;
+}
+.left-header a {
+    color: black;
+    text-decoration: none;
 }
 .right-header {
     display: inline-block;
@@ -110,4 +115,45 @@
     top: 0px;
     box-shadow: 0px 0px 0px rgba( 15, 165, 60, 0.0 );
     background: rgba( 20, 224, 133, 1 );
+  }
+.show-info{
+    margin-left: 255px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    top: 50%;
+    left: 50%;
+    width: 1000px;
+    height: 150px;
+    border: 8px solid black;
+}
+  .home-div{
+      padding: 5px;
+      width: 40%;
+      height: 125px;
+      display: inline-block;
+      border: 2px solid black;
+      margin: 25px 20px 25px 75px;
+  }
+  .home-div h3{
+      color: black;
+      height: 25px;
+      background-color: salmon;
+  }
+  .home-div p{
+      padding: 5px;
+  }
+  .home-div img{
+      height: 100px;
+      width: 150px;
+      float: right;
+  }
+  .display h3{
+    margin-left: 25px;
+    margin-bottom: 10px;
+  }
+
+  .user-content h2{
+      padding: 15px;
+      margin-top: 10px;
+      margin-left:15px;
   }

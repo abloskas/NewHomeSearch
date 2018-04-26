@@ -3,5 +3,6 @@ class HomesController < ApplicationController
   end
 
   def show
+    @home = Community.all
   end
 end
