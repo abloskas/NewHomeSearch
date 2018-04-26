@@ -3,11 +3,14 @@ Rails.application.routes.draw do
 
   get 'homes/show' => 'homes#show'
 
+  get 'homes/map' => 'homes#map'
+
   get 'users' => 'users#index'
 
   post 'users/create' => 'users#create'
 
   post 'users/login' => 'users#login'
+
 
   get 'logout' => 'users#logout'
 

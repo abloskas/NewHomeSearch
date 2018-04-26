@@ -190,3 +190,14 @@
     box-shadow: 0px 0px 0px rgba( 15, 165, 60, 0.1 );
 
   }
+.user-content{
+    display: inline-block;
+}
+  .comm-liked{
+      margin-left: 10%;
+      margin-top: 5%;
+      vertical-align: top;
+    display: inline-block;
+  }
+
+ 

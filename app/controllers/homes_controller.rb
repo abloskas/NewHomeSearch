@@ -5,4 +5,7 @@ class HomesController < ApplicationController
   def show
     @home = Community.all
   end
+
+  def map
+  end
 end
