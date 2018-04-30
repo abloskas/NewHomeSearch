@@ -11,6 +11,7 @@ Rails.application.routes.draw do
 
   post 'users/login' => 'users#login'
 
+  post 'likes' => 'homes#likes'
 
   get 'logout' => 'users#logout'
 

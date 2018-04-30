@@ -21,7 +21,12 @@
                 <%= image_tag("coming_soon.png") %>
                 <p><%=h.price%></p>
                 <p><%=h.location%></p>
-                <p><a href="">LIKE THIS </a></p>
+                        <form action="/likes" method="post">
+                            <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+                            <input type="hidden" name="community_id" value="<%=h.id%>">
+                            <input type="submit" value="Like">
+                         </form>
+  
             </div>
             <%end%>
         </div>

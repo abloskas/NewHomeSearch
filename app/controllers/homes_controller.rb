@@ -8,4 +8,9 @@ class HomesController < ApplicationController
 
   def map
   end
+
+  def likes
+    Like.create(user:current_user, community:Community.find(params[:community_id]))
+    redirect_to "/homes/show"
+  end
 end

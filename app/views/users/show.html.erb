@@ -16,6 +16,9 @@
         </div>
         <div class="comm-liked">
             <h3>Communities Liked:</h3>
+            <%@user.communities_liked.each do |community|%>
+            <p><%=community.community%></p>
+            <%end%>
         </div>
     </div>
 </body>
