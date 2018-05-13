@@ -13,6 +13,8 @@ Rails.application.routes.draw do
 
   post 'likes' => 'homes#likes'
 
+  delete 'likes/:id' => 'homes#destroy'
+
   get 'logout' => 'users#logout'
 
   get 'users/:id' => 'users#show'

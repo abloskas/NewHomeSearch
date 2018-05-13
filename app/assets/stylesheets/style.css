@@ -120,27 +120,27 @@
     box-shadow: 0px 0px 0px rgba( 15, 165, 60, 0.0 );
     background: rgba( 20, 224, 133, 1 );
   }
-.show-info{
+.show-info img{
     margin-left: 255px;
     margin-top: 15px;
     margin-bottom: 20px;
     top: 50%;
     left: 50%;
     width: 1000px;
-    height: 150px;
+    height: 175px;
     border: 8px solid black;
 }
   .home-div{
       padding: 5px;
       width: 40%;
-      height: 125px;
+      height: 165px;
       display: inline-block;
       border: 2px solid black;
       margin: 25px 20px 25px 75px;
   }
   .home-div h3{
       color: black;
-      height: 25px;
+      height: auto;
       background-color: salmon;
   }
   .home-div p{

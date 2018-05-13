@@ -21,7 +21,7 @@ class UsersController < ApplicationController
     @user = User.find_by_email(params[:email]).try(:authenticate, params[:password])
     if @user
       session[:user_id] = @user.id
-      redirect_to "/homes"
+      redirect_to "/homes/show"
     else
       flash[:errors] = ["Invalid Username or Password"]
       redirect_to "/users"
