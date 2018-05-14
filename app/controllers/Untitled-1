@@ -1,0 +1,13 @@
+Howdy!
+
+This is a project using a web scraper for data stored into a SQL database.
+
+Capabilities include/will include:
+
+* A personal profile that displays user name, email, phone number, communities liked
+* View all communities 
+* Liking and unliking communities
+* Map search of communities
+* Home page with featured communities
+
+
