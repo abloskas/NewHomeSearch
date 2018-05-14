@@ -1,13 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Welcome!</title>
-</head>
-<body>
-    <div class="wrapper" style="width:970px; margin: 0 auto; text-align:center;">
+<% content_for :login_stylesheet do %>
+    <%= stylesheet_link_tag "login_style.css" %>
+<%end%>
+<% content_for :users_content do %>
+    <div class="main" style="width:970px; margin: 0 auto; text-align:center;">
     <br>
     <br>
     <br>
@@ -35,5 +30,4 @@
             </form>
         </div>
     </div>
-</body>
-</html>
+<%end%>

@@ -1,12 +1,16 @@
 class HomesController < ApplicationController
   def index
+    @homes = Community.order('created_at').limit(3)
+    render layout: "index_general"
   end
 
   def show
     @home = Community.all
+    render layout: "show_homes"
   end
 
   def map
+    render layout: "map_general"
   end
 
   def likes

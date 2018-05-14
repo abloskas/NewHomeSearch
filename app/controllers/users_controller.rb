@@ -1,10 +1,12 @@
 class UsersController < ApplicationController
   before_action :require_login, only: [:show, :edit, :update]
   def index
+    render layout: "users_index"
   end
 
   def show
     @user = User.find(params[:id])
+    render layout: "users_show"
   end
 
   def create

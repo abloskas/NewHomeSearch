@@ -18,26 +18,9 @@
 </div>
 
 
-<div class="header">
-<div class="left-header">
-    <h1><a href="/homes">TheStrete</a></h1>
-<div class="right-header">
-    <ul>
-        <li><a href="/homes/show">Dallas Communities</a></li>
-        <li><a href="/homes/map">Map Search</a></li>
-        <% if current_user %>
-        <li><a href="/users/<%=current_user.id%>"><%=current_user.first_name%>'s Profile</a></li>
-        <li><a href="/logout">Logout</a></li>
-        <%else%>
-            <li><a href="/users">Login</a></li>
-            <%end%>
-    </ul>
-</div>
-</div>
-</div>
-
 
 <%= yield %>
+
 
 </body>
 </html>

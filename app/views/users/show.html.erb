@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Profile | TheStrete</title>
-</head>
-<body>
+<% content_for :users_show_content do %>
     <div class="wrapper">
         <div class="user-content">
             <h2><%=current_user.first_name%> <%=current_user.last_name%></h2>
@@ -25,5 +17,4 @@
             <%end%>
         </div>
     </div>
-</body>
-</html>
+<%end%>

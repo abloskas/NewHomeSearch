@@ -1,9 +1,14 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: Gotham,gotham,Verdana,sans-serif;
+    /* background-color: slateblue; */
 }
 .wrapper {
-    font-family: Gotham,gotham,Verdana,sans-serif;
+   width: 100%;
+   height:auto;
+   /* background-color: tomato; */
+
 }
 .errors{
     color: red;
@@ -15,6 +20,24 @@
     height: 500px;
     border: 10px solid black;
     
+}
+.hero-menu{
+    
+}
+.middle-content{
+    width: 100%;
+    border: 1px solid black;
+    display: inline-block;
+}
+.bottom-content{
+  
+}
+.middle-content h3{
+    height: 25px;
+    background-color: yellow;
+}
+.featured{
+    border: 1px solid red;
 }
 .header{
     font-family: Gotham,gotham,Verdana,sans-serif;

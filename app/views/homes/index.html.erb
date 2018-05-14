@@ -1,29 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
- 
-    <title>TheStrete</title>
-</head>
-<body>
-    <div class="wrapper">
-     
-        <div class="hero-image">
-                <%= image_tag("hero_image.jpg") %>
-            <div class="menu">
-                <h2>Find your Dream Home</h2>
-                <a href="/homes/show">Start Your Home Search</a>
-            </div>
-        </div>
-        <div class="middle-content">
-            <p>COMMUNITIES</p>
-        </div>
-        <div class="bottom-content">
-        </div>
-        <div class="footer">
+<% content_for :index_content do %>
+    <div class="hero-image">
+        <%= image_tag("hero_image.jpg") %> 
+    </div>
+    <div class="hero-menu">
+        <div class="menu">
+            <h2>Find your Dream Home</h2>
+            <a href="/homes/show">Start Your Home Search</a>
         </div>
     </div>
-</body>
-</html>
+       
+    <div class="middle-content">
+         <h3>Featured Communities</h3>
+         <div class="featured">
+            <% @homes.each do |home| %>
+                <p><%= home.community %></p>
+                <p><a href="/homes/show">Visit this community</a></p>
+            <%end%>
+        </div>
+    </div>
+        
+    <div class="bottom-content">
+        <p>TESTTTTTTTT</p>
+    </div>
+        
+    <footer class="footer">
+        <p>FOOTER TEST</p>
+    </footer>
+
+<%end%>
+
