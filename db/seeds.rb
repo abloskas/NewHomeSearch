@@ -36,9 +36,10 @@ def scraper
                 community: home_list.css('p.nhs_CommTitle').text.strip,
                 price: home_list.css('p.nhs_Price').text,
                 location: home_list.css('div.nhs_Location').text.strip,
-                url: "https://www.newhomesource.com" +nhs.css('a')[0].attributes["href"].value
+                url: "https://www.newhomesource.com" +nhs.css('a')[0].attributes["href"].value,
+                img: home_list.css('div.nhs_ItemImages').css('div.mainImage img').attribute('data-src').value
             }
-            Community.find_or_create_by(community:home[:community], price:home[:price], location:home[:location], url:home[:url])
+            Community.find_or_create_by(community:home[:community], price:home[:price], location:home[:location], url:home[:url], img:home[:img])
             homes << home
             puts "Added #{home[:community]}"
             puts ""

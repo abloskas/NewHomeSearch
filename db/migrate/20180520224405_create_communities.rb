@@ -5,6 +5,8 @@ class CreateCommunities < ActiveRecord::Migration
       t.string :price
       t.string :location
       t.string :url
+      t.string :img
+      t.references :user, index: true, foreign_key: true
 
       t.timestamps null: false
     end

@@ -25,12 +25,13 @@ def scraper
         pagination_nhs = pagination_p_p.css('div.nhs_CommResItem')
         pagination_nhs.each do |home_list|
             home = {
-                community: home_list.css('p.nhs_CommTitle').text,
+                community: home_list.css('p.nhs_CommTitle').text.strip,
                 price: home_list.css('p.nhs_Price').text,
-                location: home_list.css('div.nhs_Location').text,
-                url: "https://www.newhomesource.com" +nhs.css('a')[0].attributes["href"].value
+                location: home_list.css('div.nhs_Location').text.strip,
+                url: "https://www.newhomesource.com" +nhs.css('a')[0].attributes["href"].value,
+                img: home_list.css('div.nhs_ItemImages').css('div.mainImage').css('img').attribute('data-src').value
             }
-            Community.find_or_create_by(community:home[:community], price:home[:price], location:home[:location], url:home[:url])
+            # Community.find_or_create_by(community:home[:community], price:home[:price], location:home[:location], url:home[:url])
             homes << home
             puts "Added #{home[:community]}"
             puts ""

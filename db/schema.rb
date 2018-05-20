@@ -11,16 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180430004714) do
+ActiveRecord::Schema.define(version: 20180520224405) do
 
   create_table "communities", force: :cascade do |t|
     t.string   "community"
     t.string   "price"
     t.string   "location"
     t.string   "url"
+    t.string   "img"
+    t.integer  "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  add_index "communities", ["user_id"], name: "index_communities_on_user_id"
 
   create_table "likes", force: :cascade do |t|
     t.integer  "user_id"

@@ -5,9 +5,13 @@ one:
   price: MyString
   location: MyString
   url: MyString
+  img: MyString
+  user_id: 
 
 two:
   community: MyString
   price: MyString
   location: MyString
   url: MyString
+  img: MyString
+  user_id: 

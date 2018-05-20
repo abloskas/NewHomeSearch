@@ -12,7 +12,7 @@
             <%@home.each do |h|%>
             <div class="home-div">
                 <h3><%=h.community%></h3>
-                <%= image_tag("coming_soon.png") %>
+                <img src="<%=h.img%>", ></img>
                 <p><%=h.price%></p>
                 <p><%=h.location%></p>
                 <% if is_logged_in %>
