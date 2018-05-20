@@ -175,7 +175,7 @@
     width: 157px;
     float: right;
   }
-  .display h3{
+  .display h6{
     margin-left: 25px;
     margin-bottom: 10px;
   }
@@ -224,4 +224,14 @@
     display: inline-block;
   }
 
+  .dallas-homes{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .home_img{
+      width: 400px;
+      height: 225px;
+  }
  
