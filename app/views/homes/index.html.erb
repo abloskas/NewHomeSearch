@@ -9,14 +9,16 @@
         </div>
     </div>
        
-    <div class="middle-content">
+    <div class="middle-content row align-items-start">
          <h3>Featured Communities</h3>
-         <div class="featured">
             <% @homes.each do |home| %>
-                <p><%= home.community %></p>
-                <p><a href="/homes/show">Visit this community</a></p>
+                <div class="featured col border border-secondary rounded">
+                <img class="ind_img" src="<%=home.img%>"></img>
+                    <p><%= home.community %></p>
+                    <p><a href="/homes/show">Visit this community</a></p>
+                </div>
             <%end%>
-        </div>
+       
     </div>
         
     <div class="bottom-content">

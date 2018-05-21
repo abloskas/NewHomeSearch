@@ -37,7 +37,9 @@
     background-color: yellow;
 }
 .featured{
-    border: 1px solid red;
+    display: inline-block;
+    margin-left: 75px;
+    text-align: center;
 }
 .header{
     font-family: Gotham,gotham,Verdana,sans-serif;
@@ -242,4 +244,7 @@
       width: 400px;
       height: 225px;
   }
- 
+ .ind_img{
+     width: 150px;
+     height: 100px;
+ }
