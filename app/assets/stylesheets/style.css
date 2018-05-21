@@ -26,18 +26,23 @@
 }
 .middle-content{
     width: 100%;
-    border: 1px solid black;
     display: inline-block;
 }
 .bottom-content{
   
 }
 .middle-content h3{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+     font-size: 1.4em;
     height: 25px;
-    background-color: yellow;
+   
 }
 .featured{
+    padding: 5px;
     display: inline-block;
+    vertical-align: top;
     margin-left: 75px;
     text-align: center;
 }
@@ -245,6 +250,9 @@
       height: 225px;
   }
  .ind_img{
-     width: 150px;
-     height: 100px;
+     width: 250px;
+     height: 170px;
  }
+.featured p{
+    padding: 10px;
+}

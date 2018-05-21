@@ -10,9 +10,9 @@
     </div>
        
     <div class="middle-content row align-items-start">
-         <h3>Featured Communities</h3>
+         <h3>Featured Communities in Dallas, TX</h3>
             <% @homes.each do |home| %>
-                <div class="featured col border border-secondary rounded">
+                <div class="featured col-sm-3 border border-light rounded">
                 <img class="ind_img" src="<%=home.img%>"></img>
                     <p><%= home.community %></p>
                     <p><a href="/homes/show">Visit this community</a></p>
@@ -22,10 +22,17 @@
     </div>
         
     <div class="bottom-content">
-        <p>TESTTTTTTTT</p>
+        <div class="row">
+            <div class="col border border-secondary rounded">
+                <p>HELLO</p>
+            </div>
+            <div class="col border border-secondary rounded">
+                    <p>WORLD</p>
+                </div>
+      </div>
     </div>
         
-    <footer class="footer">
+    <footer class="footer page-footer font-small blue pt-4 mt-4">
         <p>FOOTER TEST</p>
     </footer>
 
