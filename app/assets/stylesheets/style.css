@@ -143,10 +143,12 @@
     box-shadow: 0px 0px 0px rgba( 15, 165, 60, 0.0 );
     background: rgba( 20, 224, 133, 1 );
   }
+  
 .show-info img{
-    margin-left: 255px;
+    align-content: center;
+     margin-left: 205px;
     margin-top: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 20px; 
     top: 50%;
     left: 50%;
     width: 1000px;
