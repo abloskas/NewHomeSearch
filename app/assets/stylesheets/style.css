@@ -155,6 +155,12 @@
     height: 175px;
     border: 8px solid black;
 }
+.home{
+    padding-bottom: 8px;
+    /* border: 2px solid black; */
+    margin: 15px;
+    text-align: center;
+}
   .home-div{
       padding: 5px;
       width: 40%;

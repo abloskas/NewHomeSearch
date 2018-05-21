@@ -10,7 +10,7 @@
         <div class="dallas-homes container">
             <div class="row align-items-start">
                 <%@home.each do |h|%>
-                <div class="col">
+                <div class="col home border border-secondary rounded">
                     <h5><%=h.community%></h5>
                     <img class="home_img" src="<%=h.img%>"></img>
                     <p><%=h.price%></p>
@@ -20,13 +20,13 @@
                             <form action="/likes/<%= h.id %>" method="post">
                                 <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
                                 <input type="hidden" name="_method" value="delete">
-                                <input type="submit" value="Unlike">
+                                <input class="btn btn-secondary" type="submit" value="Unlike">
                             </form>  
                         <% else %> 
                             <form action="/likes" method="post">
                                 <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
                                 <input type="hidden" name="community_id" value="<%=h.id%>">
-                                <input type="submit" value="Like">
+                                <input class ="btn btn-warning" type="submit" value="Like">
                             </form>
                         <% end %>   
                     <% else %>    
