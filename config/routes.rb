@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'homes' => 'homes#index'
+  get '' => 'homes#index'
 
   get 'homes/show' => 'homes#show'
 
